@@ -23,31 +23,19 @@ El libro tambien recomienda conservar todos los digitos durante los calculos int
 
 ### Area de un rectangulo
 
-$$
-A=LW
-$$
+$A=LW$
 
 ### Area de un circulo
 
-$$
-A=\pi r^2
-$$
+$A=\pi r^2$
 
 Para multiplicar:
 
-$$
-\text{cifras significativas del resultado}
-=
-\text{menor numero de cifras significativas de los datos}
-$$
+$\text{cifras significativas del resultado} = \text{menor numero de cifras significativas de los datos}$
 
 Para sumar o restar:
 
-$$
-\text{lugares decimales del resultado}
-=
-\text{menor numero de lugares decimales de los datos}
-$$
+$\text{lugares decimales del resultado} = \text{menor numero de lugares decimales de los datos}$
 
 ## Ejemplo del libro
 
@@ -55,43 +43,31 @@ $$
 
 Una habitacion mide:
 
-$$
-L=12.71\,m
-$$
+$L=12.71\,m$
 
-$$
-W=3.46\,m
-$$
+$W=3.46\,m$
 
 Encontrar el area.
 
 ### Que se busca
 
-$$
-A=?
-$$
+$A=?$
 
 ### Principio fisico
 
 El area de un rectangulo es:
 
-$$
-A=LW
-$$
+$A=LW$
 
 ### Desarrollo paso a paso
 
 Sustituimos:
 
-$$
-A=(12.71\,m)(3.46\,m)
-$$
+$A=(12.71\,m)(3.46\,m)$
 
 Primero calculamos sin redondear:
 
-$$
-A=43.9766\,m^2
-$$
+$A=43.9766\,m^2$
 
 Contamos cifras significativas:
 
@@ -100,15 +76,11 @@ Contamos cifras significativas:
 
 Por tanto, el resultado debe tener 3 cifras significativas.
 
-$$
-43.9766\rightarrow44.0
-$$
+$43.9766\rightarrow44.0$
 
 ### Resultado
 
-$$
-\boxed{A=44.0\,m^2}
-$$
+$\boxed{A=44.0\,m^2}$
 
 ### Interpretacion fisica
 
@@ -120,113 +92,77 @@ Los digitos que muestra una calculadora no representan automaticamente precision
 
 **a)**
 
-$$
-78.9\pm0.2
-$$
+$78.9\pm0.2$
 
 Tiene:
 
-$$
-\boxed{3\ cifras\ significativas}
-$$
+$\boxed{3\ cifras\ significativas}$
 
 **b)**
 
-$$
-3.788\times10^9
-$$
+$3.788\times10^9$
 
 Tiene:
 
-$$
-\boxed{4\ cifras\ significativas}
-$$
+$\boxed{4\ cifras\ significativas}$
 
 **c)**
 
-$$
-2.46\times10^{-6}
-$$
+$2.46\times10^{-6}$
 
 Tiene:
 
-$$
-\boxed{3\ cifras\ significativas}
-$$
+$\boxed{3\ cifras\ significativas}$
 
 **d)**
 
-$$
-0.0053
-$$
+$0.0053$
 
 Los ceros iniciales no cuentan:
 
-$$
-\boxed{2\ cifras\ significativas}
-$$
+$\boxed{2\ cifras\ significativas}$
 
 ### Ejercicio 21 — Año tropical
 
 Datos:
 
-$$
-365.242199\,dias
-$$
+$365.242199\,dias$
 
 Convertimos dias a horas:
 
-$$
-365.242199\,dias
-\left(\frac{24\,h}{1\,dia}\right)
-$$
+$365.242199\,dias \left(\frac{24\,h}{1\,dia}\right)$
 
 Se cancela dia:
 
-$$
-=365.242199(24)\,h
-$$
+$=365.242199(24)\,h$
 
 Convertimos horas a segundos:
 
-$$
-365.242199(24)
-\left(\frac{3600\,s}{1\,h}\right)
-$$
+$365.242199(24) \left(\frac{3600\,s}{1\,h}\right)$
 
 Se cancela hora:
 
-$$
-=31\,556\,925.9936\,s
-$$
+$=31\,556\,925.9936\,s$
 
 En notacion cientifica:
 
-$$
-=3.15569259936\times10^7\,s
-$$
+$=3.15569259936\times10^7\,s$
 
 ### Resultado
 
-$$
-\boxed{t\approx3.15569\times10^7\,s}
-$$
+$\boxed{t\approx3.15569\times10^7\,s}$
 
 ### Ejercicio 29 — Redondeo de tres cifras
 
 El libro presenta:
 
-$$
-6.379\,m\rightarrow6.38\,m
-$$
+$6.379\,m\rightarrow6.38\,m$
 
 porque el cuarto digito es $9$.
 
 Tambien:
 
-$$
-6.374\,m\rightarrow6.37\,m
-$$
+$6.374\,m\rightarrow6.37\,m$
 
 porque el cuarto digito es $4$.
 

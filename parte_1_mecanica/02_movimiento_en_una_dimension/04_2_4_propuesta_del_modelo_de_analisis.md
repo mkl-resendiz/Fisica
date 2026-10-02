@@ -21,13 +21,9 @@ El corredor se representa como una partícula que recorre una línea recta.
 
 Datos:
 
-\[
-\Delta x=20\,\mathrm{m}
-\]
+$\Delta x=20\,\mathrm{m}$
 
-\[
-\Delta t=4.0\,\mathrm{s}
-\]
+$\Delta t=4.0\,\mathrm{s}$
 
 y la rapidez es constante.
 
@@ -37,35 +33,23 @@ La condición “rapidez constante” permite utilizar el modelo de partícula b
 
 ### 3. Analizar
 
-\[
-v_x=\frac{\Delta x}{\Delta t}
-\]
+$v_x=\frac{\Delta x}{\Delta t}$
 
-\[
-v_x=\frac{20\,\mathrm{m}}{4.0\,\mathrm{s}}
-=5.0\,\mathrm{m/s}
-\]
+$v_x=\frac{20\,\mathrm{m}}{4.0\,\mathrm{s}} =5.0\,\mathrm{m/s}$
 
-Para \(t=10\,\mathrm{s}\):
+Para $t=10\,\mathrm{s}$:
 
-\[
-x_f=x_i+v_xt
-\]
+$x_f=x_i+v_xt$
 
-\[
-x_f=0+(5.0\,\mathrm{m/s})(10\,\mathrm{s})
-=50\,\mathrm{m}
-\]
+$x_f=0+(5.0\,\mathrm{m/s})(10\,\mathrm{s}) =50\,\mathrm{m}$
 
 ### 4. Finalizar
 
 Las unidades son correctas:
 
-\[
-\frac{\mathrm{m}}{\mathrm{s}}=\mathrm{m/s}
-\]
+$\frac{\mathrm{m}}{\mathrm{s}}=\mathrm{m/s}$
 
-y la posición de \(50\,\mathrm{m}\) es coherente con mantener \(5.0\,\mathrm{m/s}\) durante \(10\,\mathrm{s}\).
+y la posición de $50\,\mathrm{m}$ es coherente con mantener $5.0\,\mathrm{m/s}$ durante $10\,\mathrm{s}$.
 
 ## Ejercicios representativos
 
@@ -79,21 +63,17 @@ Un automóvil recorre una carretera recta con rapidez constante.
 
 **Analizar:**
 
-\[
-x_f=x_i+v_xt
-\]
+$x_f=x_i+v_xt$
 
-**Finalizar:** verificar que \(v_x t\) tenga unidades de longitud.
+**Finalizar:** verificar que $v_x t$ tenga unidades de longitud.
 
 ### Ejercicio 2 — Reconocer cuándo NO usar el modelo
 
 Si la velocidad cambia con el tiempo, no debe utilizarse directamente:
 
-\[
-x_f=x_i+v_xt
-\]
+$x_f=x_i+v_xt$
 
-con un único valor de \(v_x\), porque esa ecuación pertenece al modelo de velocidad constante.
+con un único valor de $v_x$, porque esa ecuación pertenece al modelo de velocidad constante.
 
 En ese caso hay que identificar otro modelo, por ejemplo el de aceleración constante si la aceleración permanece constante.
 
@@ -105,36 +85,25 @@ El procedimiento es:
 
 **Automóvil:**
 
-\[
-x_{\mathrm{auto}}=45.0\,\mathrm{m}+(45.0\,\mathrm{m/s})t
-\]
+$x_{\mathrm{auto}}=45.0\,\mathrm{m}+(45.0\,\mathrm{m/s})t$
 
 **Patrullero:**
 
-\[
-x_{\mathrm{policía}}=
-\frac12(3.00\,\mathrm{m/s^2})t^2
-\]
+$x_{\mathrm{policía}}= \frac12(3.00\,\mathrm{m/s^2})t^2$
 
 El alcance ocurre cuando:
 
-\[
-x_{\mathrm{auto}}=x_{\mathrm{policía}}
-\]
+$x_{\mathrm{auto}}=x_{\mathrm{policía}}$
 
 Por tanto:
 
-\[
-45.0+45.0t=1.50t^2
-\]
+$45.0+45.0t=1.50t^2$
 
 La intersección positiva de ambas curvas corresponde al instante de alcance.
 
 El ejemplo del libro obtiene:
 
-\[
-\boxed{t\approx31.0\,\mathrm{s}}
-\]
+$\boxed{t\approx31.0\,\mathrm{s}}$
 
 **Interpretación:** el método gráfico y el algebraico representan la misma condición física: ambos vehículos ocupan la misma posición en el mismo instante.
 

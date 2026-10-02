@@ -24,17 +24,13 @@ En la figura 2.10:
 
 Objeto moviéndose a la derecha con rapidez constante.
 
-Si la derecha es \(+x\):
+Si la derecha es $+x$:
 
-\[
-v_x>0
-\]
+$v_x>0$
 
 y como la rapidez no cambia:
 
-\[
-a_x=0
-\]
+$a_x=0$
 
 El diagrama debe mostrar puntos igualmente separados hacia la derecha y vectores de velocidad iguales.
 
@@ -42,15 +38,11 @@ El diagrama debe mostrar puntos igualmente separados hacia la derecha y vectores
 
 Objeto moviéndose a la derecha y disminuyendo su rapidez de manera constante.
 
-\[
-v_x>0
-\]
+$v_x>0$
 
 pero la rapidez disminuye, por lo que:
 
-\[
-a_x<0
-\]
+$a_x<0$
 
 El diagrama debe mostrar puntos cada vez más cercanos mientras el objeto avanza hacia la derecha.
 
@@ -58,15 +50,11 @@ El diagrama debe mostrar puntos cada vez más cercanos mientras el objeto avanza
 
 Objeto moviéndose a la izquierda y aumentando su rapidez.
 
-\[
-v_x<0
-\]
+$v_x<0$
 
 Como aumenta su rapidez en la misma dirección del movimiento:
 
-\[
-a_x<0
-\]
+$a_x<0$
 
 El diagrama debe mostrar posiciones cada vez más separadas hacia la izquierda.
 

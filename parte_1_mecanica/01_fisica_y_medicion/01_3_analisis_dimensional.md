@@ -6,27 +6,17 @@ El analisis dimensional trata las dimensiones como cantidades algebraicas. Una e
 
 En el libro:
 
-$$
-[L]=L,\qquad[M]=M,\qquad[T]=T
-$$
+$[L]=L,\qquad[M]=M,\qquad[T]=T$
 
 Algunas dimensiones utiles son:
 
-$$
-[v]=\frac{L}{T}
-$$
+$[v]=\frac{L}{T}$
 
-$$
-[a]=\frac{L}{T^2}
-$$
+$[a]=\frac{L}{T^2}$
 
-$$
-[A]=L^2
-$$
+$[A]=L^2$
 
-$$
-[V]=L^3
-$$
+$[V]=L^3$
 
 El analisis dimensional puede comprobar ecuaciones y determinar exponentes en relaciones de proporcionalidad, pero no determina constantes numericas adimensionales.
 
@@ -43,32 +33,21 @@ El analisis dimensional puede comprobar ecuaciones y determinar exponentes en re
 
 ### Rapidez
 
-$$
-[v]=\frac{L}{T}
-$$
+$[v]=\frac{L}{T}$
 
 ### Aceleracion
 
-$$
-[a]=\frac{L}{T^2}
-$$
+$[a]=\frac{L}{T^2}$
 
 ### Posicion con aceleracion
 
 La expresion:
 
-$$
-x\propto at^2
-$$
+$x\propto at^2$
 
 es dimensionalmente posible porque:
 
-$$
-[a t^2]
-=
-\frac{L}{T^2}T^2
-=L
-$$
+$[a t^2] = \frac{L}{T^2}T^2 =L$
 
 ## Ejemplo del libro
 
@@ -76,25 +55,17 @@ $$
 
 Demostrar que:
 
-$$
-v=at
-$$
+$v=at$
 
 es dimensionalmente correcta.
 
 ### Datos
 
-$$
-[v]=\frac{L}{T}
-$$
+$[v]=\frac{L}{T}$
 
-$$
-[a]=\frac{L}{T^2}
-$$
+$[a]=\frac{L}{T^2}$
 
-$$
-[t]=T
-$$
+$[t]=T$
 
 ### Que se busca
 
@@ -108,39 +79,27 @@ Una ecuacion fisica debe ser dimensionalmente homogenea.
 
 Lado izquierdo:
 
-$$
-[v]=\frac{L}{T}
-$$
+$[v]=\frac{L}{T}$
 
 Lado derecho:
 
-$$
-[at]=[a][t]
-$$
+$[at]=[a][t]$
 
 Sustituimos:
 
-$$
-[at]=\left(\frac{L}{T^2}\right)(T)
-$$
+$[at]=\left(\frac{L}{T^2}\right)(T)$
 
 Cancelamos un factor $T$:
 
-$$
-[at]=\frac{L}{T}
-$$
+$[at]=\frac{L}{T}$
 
 Por tanto:
 
-$$
-[v]=[at]
-$$
+$[v]=[at]$
 
 ### Resultado
 
-$$
-\boxed{v=at\text{ es dimensionalmente correcta}}
-$$
+$\boxed{v=at\text{ es dimensionalmente correcta}}$
 
 ### Interpretacion fisica
 
@@ -152,64 +111,43 @@ La prueba dimensional indica que la ecuacion tiene una forma compatible con las 
 
 Se propone:
 
-$$
-x=ka^m t^n
-$$
+$x=ka^m t^n$
 
 donde $k$ es adimensional.
 
 Como:
 
-$$
-[x]=L
-$$
+$[x]=L$
 
 y:
 
-$$
-[a]=\frac{L}{T^2}
-$$
+$[a]=\frac{L}{T^2}$
 
 entonces:
 
-$$
-L=
-\left(\frac{L}{T^2}\right)^mT^n
-$$
+$L= \left(\frac{L}{T^2}\right)^mT^n$
 
 Aplicamos las potencias:
 
-$$
-L=L^mT^{-2m+n}
-$$
+$L=L^mT^{-2m+n}$
 
 Para que ambos lados sean iguales:
 
-$$
-m=1
-$$
+$m=1$
 
 y:
 
-$$
--2m+n=0
-$$
+$-2m+n=0$
 
 Sustituimos $m=1$:
 
-$$
--2(1)+n=0
-$$
+$-2(1)+n=0$
 
-$$
-n=2
-$$
+$n=2$
 
 Por tanto:
 
-$$
-\boxed{x=kat^2}
-$$
+$\boxed{x=kat^2}$
 
 El analisis dimensional no permite obtener el valor numerico de $k$.
 
@@ -217,124 +155,81 @@ El analisis dimensional no permite obtener el valor numerico de $k$.
 
 **a)**
 
-$$
-v_f=v_i+ax
-$$
+$v_f=v_i+ax$
 
 Dimensiones de los primeros terminos:
 
-$$
-[v_f]=[v_i]=\frac{L}{T}
-$$
+$[v_f]=[v_i]=\frac{L}{T}$
 
 Pero:
 
-$$
-[ax]=
-\left(\frac{L}{T^2}\right)(L)
-=
-\frac{L^2}{T^2}
-$$
+$[ax]= \left(\frac{L}{T^2}\right)(L) = \frac{L^2}{T^2}$
 
 Como:
 
-$$
-\frac{L}{T}\neq\frac{L^2}{T^2}
-$$
+$\frac{L}{T}\neq\frac{L^2}{T^2}$
 
 la ecuacion es dimensionalmente incorrecta.
 
-$$
-\boxed{\text{a) Incorrecta}}
-$$
+$\boxed{\text{a) Incorrecta}}$
 
 **b)**
 
-$$
-y=(2\,m)\cos(kx)
-$$
+$y=(2\,m)\cos(kx)$
 
 Para que el argumento del coseno sea valido:
 
-$$
-[kx]=1
-$$
+$[kx]=1$
 
 El problema da:
 
-$$
-[k]=m^{-1}
-$$
+$[k]=m^{-1}$
 
 y:
 
-$$
-[x]=m
-$$
+$[x]=m$
 
 Por tanto:
 
-$$
-[kx]=(m^{-1})(m)=1
-$$
+$[kx]=(m^{-1})(m)=1$
 
 Ademas, $2\,m$ tiene dimension de longitud, igual que $y$.
 
-$$
-\boxed{\text{b) Correcta}}
-$$
+$\boxed{\text{b) Correcta}}$
 
 ### Ejercicio 10
 
 Dada:
 
-$$
-x=At^3+Bt
-$$
+$x=At^3+Bt$
 
 Cada termino debe tener dimension de longitud.
 
 Para el primer termino:
 
-$$
-[At^3]=L
-$$
+$[At^3]=L$
 
-$$
-[A]T^3=L
-$$
+$[A]T^3=L$
 
 Despejamos:
 
-$$
-\boxed{[A]=\frac{L}{T^3}}
-$$
+$\boxed{[A]=\frac{L}{T^3}}$
 
 Para el segundo:
 
-$$
-[Bt]=L
-$$
+$[Bt]=L$
 
-$$
-[B]T=L
-$$
+$[B]T=L$
 
-$$
-\boxed{[B]=\frac{L}{T}}
-$$
+$\boxed{[B]=\frac{L}{T}}$
 
 Ahora:
 
-$$
-\frac{dx}{dt}=3At^2+B
-$$
+$\frac{dx}{dt}=3At^2+B$
 
 Como $dx/dt$ es rapidez:
 
-$$
-\boxed{\left[\frac{dx}{dt}\right]=\frac{L}{T}}
-$$
+$\boxed{\left[\frac{dx}{dt}\right]=\frac{L}{T}}$
 
 ## Dato curioso
 

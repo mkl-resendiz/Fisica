@@ -38,27 +38,19 @@ La representacion matematica es el paso que permite convertir la situacion fisic
 
 Para un triangulo rectangulo:
 
-$$
-\tan\theta=\frac{\text{cateto opuesto}}{\text{cateto adyacente}}
-$$
+$\tan\theta=\frac{\text{cateto opuesto}}{\text{cateto adyacente}}$
 
 Si el cateto opuesto es $h$ y el adyacente es $d$:
 
-$$
-\tan\theta=\frac{h}{d}
-$$
+$\tan\theta=\frac{h}{d}$
 
 Despejando:
 
-$$
-d\tan\theta=h
-$$
+$d\tan\theta=h$
 
 Por tanto:
 
-$$
-\boxed{h=d\tan\theta}
-$$
+$\boxed{h=d\tan\theta}$
 
 ## Ejemplo del libro
 
@@ -68,19 +60,13 @@ Un observador esta a $50.0\,m$ de un arbol y observa la parte superior con un an
 
 ### Datos
 
-$$
-d=50.0\,m
-$$
+$d=50.0\,m$
 
-$$
-\theta=25.0^\circ
-$$
+$\theta=25.0^\circ$
 
 ### Que se busca
 
-$$
-h=?
-$$
+$h=?$
 
 ### Principio fisico
 
@@ -88,41 +74,27 @@ Se representa la situacion mediante un triangulo rectangulo.
 
 ### Desarrollo paso a paso
 
-$$
-\tan\theta=\frac{h}{d}
-$$
+$\tan\theta=\frac{h}{d}$
 
 Multiplicamos por $d$:
 
-$$
-d\tan\theta=h
-$$
+$d\tan\theta=h$
 
 Reordenamos:
 
-$$
-h=d\tan\theta
-$$
+$h=d\tan\theta$
 
 Sustituimos:
 
-$$
-h=(50.0\,m)\tan(25.0^\circ)
-$$
+$h=(50.0\,m)\tan(25.0^\circ)$
 
-$$
-h=(50.0)(0.4663)\,m
-$$
+$h=(50.0)(0.4663)\,m$
 
-$$
-\boxed{h=23.3\,m}
-$$
+$\boxed{h=23.3\,m}$
 
 ### Resultado
 
-$$
-\boxed{h=23.3\,m}
-$$
+$\boxed{h=23.3\,m}$
 
 ### Interpretacion fisica
 
@@ -134,79 +106,51 @@ El modelo geometrico permite obtener una magnitud dificil de medir directamente.
 
 Datos:
 
-$$
-d=100\,m
-$$
+$d=100\,m$
 
-$$
-\theta=35.0^\circ
-$$
+$\theta=35.0^\circ$
 
 Modelo:
 
-$$
-\tan\theta=\frac{w}{d}
-$$
+$\tan\theta=\frac{w}{d}$
 
 Despejamos:
 
-$$
-w=d\tan\theta
-$$
+$w=d\tan\theta$
 
 Sustituimos:
 
-$$
-w=(100\,m)\tan(35.0^\circ)
-$$
+$w=(100\,m)\tan(35.0^\circ)$
 
-$$
-w=(100)(0.7002)\,m
-$$
+$w=(100)(0.7002)\,m$
 
-$$
-\boxed{w\approx70.0\,m}
-$$
+$\boxed{w\approx70.0\,m}$
 
 ### Ejercicio 7 — Separacion entre planos atomicos
 
 El lado del cubo es:
 
-$$
-L=0.200\,nm
-$$
+$L=0.200\,nm$
 
 Para la geometria mostrada en el problema, la diagonal de una cara es:
 
-$$
-d_{cara}=\sqrt{L^2+L^2}
-$$
+$d_{cara}=\sqrt{L^2+L^2}$
 
 Factorizamos $L^2$:
 
-$$
-d_{cara}=\sqrt{2L^2}
-$$
+$d_{cara}=\sqrt{2L^2}$
 
-$$
-d_{cara}=L\sqrt2
-$$
+$d_{cara}=L\sqrt2$
 
 La separacion perpendicular correspondiente es:
 
-$$
-d=\frac{L}{\sqrt2}
-$$
+$d=\frac{L}{\sqrt2}$
 
 Sustituimos:
 
-$$
-d=\frac{0.200\,nm}{\sqrt2}
-$$
+$d=\frac{0.200\,nm}{\sqrt2}$
 
-$$
-\boxed{d\approx0.141\,nm}
-$$
+$\boxed{d\approx0.141\,nm}$
 
 ## Dato curioso
 

@@ -12,7 +12,7 @@ En las notas del capítulo se seleccionaron ejercicios representativos para prac
 - diagramas de movimiento;
 - aceleración constante;
 - caída libre;
-- integración y área bajo la curva \(v-t\).
+- integración y área bajo la curva $v-t$.
 
 ## Referencia de problemas utilizados
 
