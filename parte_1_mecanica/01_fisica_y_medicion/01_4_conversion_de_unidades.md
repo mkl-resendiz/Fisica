@@ -2,206 +2,339 @@
 
 ## Resumen
 
-Las unidades se pueden tratar algebraicamente. Para convertir una cantidad, se multiplica por factores de conversion que equivalen a uno y se escoge su orientacion para que la unidad original se cancele.
+Las unidades se manipulan algebraicamente. Un factor de conversion es una fraccion cuyo valor es uno, pero permite cambiar la unidad.
 
-El libro recomienda mantener las unidades durante todos los pasos del calculo. Esto permite detectar errores cuando las unidades finales no corresponden con la cantidad buscada.
-
-Algunas equivalencias usadas en el capitulo:
+Por ejemplo:
 
 $$
-1\\,mi=1609\\,m=1.609\\,km
-$$
-
-$$
-1\\,ft=0.3048\\,m
-$$
-
-$$
-1\\,in.=0.0254\\,m
-$$
-
-## Conceptos clave
-
-- Factor de conversion.
-- Cancelacion algebraica de unidades.
-- Unidades SI.
-- Unidades del sistema usual U.S.
-- Densidad y conversion de unidades.
-- Mantener unidades durante todo el calculo.
-
-## Formulas importantes
-
-### Factor de conversion
-
-Si:
-
-$$
-1\\,in.=2.54\\,cm
+1\,in.=2.54\,cm
 $$
 
 entonces:
 
 $$
-\\frac{2.54\\,cm}{1\\,in.}=1
+\frac{2.54\,cm}{1\,in.}=1
 $$
 
-Esto permite convertir:
+La orientacion correcta del factor se elige para cancelar la unidad original.
+
+## Conceptos clave
+
+- Factor de conversion.
+- Cancelacion de unidades.
+- SI.
+- Conversion entre sistemas.
+- Conversion encadenada.
+
+## Formulas importantes
+
+Si:
 
 $$
-15.0\\,in.\\left(\\frac{2.54\\,cm}{1\\,in.}\\right)
+1\,mi=1609\,m
 $$
 
-y cancelar pulgadas.
-
-### Densidad
+entonces:
 
 $$
-\\rho=\\frac{m}{V}
+\frac{1\,mi}{1609\,m}=1
 $$
+
+y tambien:
+
+$$
+\frac{1609\,m}{1\,mi}=1
+$$
+
+Ambos factores valen uno; se elige el que produzca la cancelacion deseada.
 
 ## Ejemplo del libro
 
 ### Problema
 
-Un automovil viaja a $38.0\\,m/s$. Determinar si supera un limite de $75.0\\,mi/h$.
+Un automovil viaja a $38.0\,m/s$. Determinar si supera un limite de $75.0\,mi/h$.
 
 ### Datos
 
 $$
-v=38.0\\,m/s
+v=38.0\,m/s
 $$
 
 $$
-v_{lim}=75.0\\,mi/h
+v_{lim}=75.0\,mi/h
 $$
 
 ### Que se busca
 
-Expresar $38.0\\,m/s$ en $mi/h$.
+Convertir $38.0\,m/s$ a $mi/h$.
 
 ### Principio fisico
 
-Se usan factores de conversion que equivalen a uno, escogiendo su orientacion para cancelar unidades.
+Usar factores de conversion sin perder unidades.
 
 ### Desarrollo paso a paso
 
-Primero metros a millas:
+Primero convertimos metros a millas:
 
 $$
-38.0\\frac{m}{s}
-\\left(\\frac{1\\,mi}{1609\\,m}\\right)
+38.0\frac{m}{s}
+\left(\frac{1\,mi}{1609\,m}\right)
 $$
 
-Despues segundos a horas:
+Se cancela $m$:
 
 $$
-38.0\\frac{m}{s}
-\\left(\\frac{1\\,mi}{1609\\,m}\\right)
-\\left(\\frac{60\\,s}{1\\,min}\\right)
-\\left(\\frac{60\\,min}{1\\,h}\\right)
+=
+\frac{38.0}{1609}\frac{mi}{s}
 $$
 
-Resultado:
+Ahora convertimos segundos a minutos:
 
 $$
-v\\approx85.0\\,mi/h
+\frac{38.0}{1609}\frac{mi}{s}
+\left(\frac{60\,s}{1\,min}\right)
+$$
+
+Se cancela $s$.
+
+Finalmente convertimos minutos a horas:
+
+$$
+\frac{38.0}{1609}\frac{mi}{s}
+\left(\frac{60\,s}{1\,min}\right)
+\left(\frac{60\,min}{1\,h}\right)
+$$
+
+Se cancelan $s$ y $min$:
+
+$$
+v=
+38.0
+\left(\frac{1}{1609}\right)
+(60)(60)
+\frac{mi}{h}
+$$
+
+$$
+v\approx85.0\,mi/h
 $$
 
 ### Resultado
 
 $$
-\\boxed{38.0\\,m/s\\approx85.0\\,mi/h}
+\boxed{38.0\,m/s\approx85.0\,mi/h}
 $$
 
-Por tanto, la rapidez convertida es mayor que $75.0\\,mi/h$.
+Como $85.0>75.0$:
+
+$$
+\boxed{\text{la rapidez supera el limite indicado}}
+$$
 
 ### Interpretacion fisica
 
-La conversion no cambia la rapidez. Solo cambia la forma de expresarla.
+La rapidez no cambio; solamente cambio su unidad.
 
 ## Ejercicios del final
 
-### Ejercicio 11
+### Ejercicio 11 — Densidad del plomo en SI
 
-Una pieza de plomo tiene masa $23.94\\,g$ y volumen $2.10\\,cm^3$. Calcular su densidad en unidades SI.
+Datos:
+
+$$
+m=23.94\,g
+$$
+
+$$
+V=2.10\,cm^3
+$$
 
 Primero:
 
 $$
-\\rho=\\frac{23.94\\,g}{2.10\\,cm^3}
-=11.4\\,g/cm^3
+\rho=\frac{m}{V}
 $$
 
-Como:
-
 $$
-1\\,g=10^{-3}\\,kg
-$$
-
-y:
-
-$$
-1\\,cm^3=10^{-6}\\,m^3
+\rho=
+\frac{23.94\,g}{2.10\,cm^3}
 $$
 
-entonces:
+$$
+\rho=11.4\,g/cm^3
+$$
+
+Ahora convertimos:
 
 $$
-1\\,g/cm^3=10^3\\,kg/m^3
+1\,g=10^{-3}\,kg
+$$
+
+$$
+1\,cm=10^{-2}\,m
+$$
+
+Como el volumen esta al cubo:
+
+$$
+1\,cm^3=(10^{-2}\,m)^3
+$$
+
+$$
+1\,cm^3=10^{-6}\,m^3
+$$
+
+Entonces:
+
+$$
+1\,\frac{g}{cm^3}
+=
+\frac{10^{-3}\,kg}{10^{-6}\,m^3}
+$$
+
+$$
+1\,\frac{g}{cm^3}
+=
+10^3\,\frac{kg}{m^3}
 $$
 
 Por tanto:
 
 $$
-\\boxed{\\rho=1.14\\times10^4\\,kg/m^3}
+\rho=
+(11.4\,g/cm^3)
+\left(
+10^3\,\frac{kg/m^3}{g/cm^3}
+\right)
 $$
 
-### Ejercicio 13
+$$
+\boxed{\rho=1.14\times10^4\,kg/m^3}
+$$
 
-Encontrar el radio de una esfera de aluminio que equilibra una esfera de hierro de radio $2.00\\,cm$.
+### Ejercicio 13 — Esfera de aluminio
+
+Datos:
+
+$$
+V=1.00\,m^3
+$$
+
+$$
+m_{Al}=2.70\times10^3\,kg
+$$
+
+$$
+m_{Fe}=7.86\times10^3\,kg
+$$
+
+$$
+r_{Fe}=2.00\,cm
+$$
 
 Densidades:
 
 $$
-\\rho_{Al}=2.70\\times10^3\\,kg/m^3
+\rho_{Al}=2.70\times10^3\,kg/m^3
 $$
 
 $$
-\\rho_{Fe}=7.86\\times10^3\\,kg/m^3
+\rho_{Fe}=7.86\times10^3\,kg/m^3
 $$
 
 En equilibrio, las masas son iguales:
 
 $$
-\\rho_{Al}\\frac{4}{3}\\pi r_{Al}^3
+m_{Al}=m_{Fe}
+$$
+
+Como:
+
+$$
+m=\rho V
+$$
+
+entonces:
+
+$$
+\rho_{Al}V_{Al}
 =
-\\rho_{Fe}\\frac{4}{3}\\pi r_{Fe}^3
+\rho_{Fe}V_{Fe}
 $$
 
-Se simplifica:
+Para esferas:
 
 $$
-r_{Al}=r_{Fe}
-\\left(\\frac{\\rho_{Fe}}{\\rho_{Al}}\\right)^{1/3}
+\rho_{Al}\frac{4}{3}\pi r_{Al}^3
+=
+\rho_{Fe}\frac{4}{3}\pi r_{Fe}^3
 $$
 
-Sustituyendo:
+Cancelamos $4/3$ y $\pi$:
+
+$$
+\rho_{Al}r_{Al}^3
+=
+\rho_{Fe}r_{Fe}^3
+$$
+
+Despejamos:
+
+$$
+r_{Al}^3
+=
+\frac{\rho_{Fe}}{\rho_{Al}}r_{Fe}^3
+$$
+
+Aplicamos raiz cubica:
 
 $$
 r_{Al}
-=(2.00\\,cm)
-\\left(\\frac{7.86}{2.70}\\right)^{1/3}
+=
+r_{Fe}
+\left(\frac{\rho_{Fe}}{\rho_{Al}}\right)^{1/3}
+$$
+
+Sustituimos:
+
+$$
+r_{Al}
+=
+(2.00\,cm)
+\left(
+\frac{7.86\times10^3}
+{2.70\times10^3}
+\right)^{1/3}
+$$
+
+Se cancelan $10^3$:
+
+$$
+r_{Al}
+=
+(2.00\,cm)
+\left(
+\frac{7.86}{2.70}
+\right)^{1/3}
 $$
 
 $$
-\\boxed{r_{Al}\\approx2.86\\,cm}
+\boxed{r_{Al}\approx2.86\,cm}
 $$
 
-### Ejercicio 15
+### Ejercicio 15 — Grosor de pintura
 
-Un galon de pintura tiene volumen $3.78\\times10^{-3}\\,m^3$ y cubre $25.0\\,m^2$. Encontrar el grosor.
+Datos:
 
-El volumen de una capa uniforme es:
+$$
+V=3.78\times10^{-3}\,m^3
+$$
+
+$$
+A=25.0\,m^2
+$$
+
+Para una capa uniforme:
 
 $$
 V=At
@@ -210,30 +343,55 @@ $$
 Despejamos:
 
 $$
-t=\\frac{V}{A}
+t=\frac{V}{A}
+$$
+
+Sustituimos:
+
+$$
+t=
+\frac{3.78\times10^{-3}\,m^3}
+{25.0\,m^2}
+$$
+
+Se simplifican las unidades:
+
+$$
+\frac{m^3}{m^2}=m
+$$
+
+Entonces:
+
+$$
+t=
+\frac{3.78\times10^{-3}}{25.0}\,m
 $$
 
 $$
-t=\\frac{3.78\\times10^{-3}\\,m^3}{25.0\\,m^2}
+\boxed{t=1.51\times10^{-4}\,m}
+$$
+
+En milimetros:
+
+$$
+1\,m=1000\,mm
 $$
 
 $$
-\\boxed{t=1.51\\times10^{-4}\\,m}
+t=(1.51\times10^{-4}\,m)(1000\,mm/m)
 $$
 
-Equivale aproximadamente a:
-
 $$
-\\boxed{t=0.151\\,mm}
+\boxed{t=0.151\,mm}
 $$
 
 ## Dato curioso
 
-El factor de conversion es una cantidad adimensional: representa una igualdad entre dos maneras de expresar la misma magnitud. Por eso puede multiplicarse por una cantidad sin cambiar su valor fisico.
+Un factor de conversion no altera la cantidad fisica porque su valor es exactamente uno; solamente cambia la forma en que expresamos esa cantidad.
 
 ## Ideas para recordar
 
-- Una conversion correcta debe cancelar la unidad que no quieres.
-- Nunca quites las unidades demasiado pronto.
-- La unidad final debe corresponder con lo que se pregunta.
-- Una conversion cambia la representacion numerica, no la cantidad fisica.
+- Decide primero que unidad quieres al final.
+- Coloca el factor para que la unidad original se cancele.
+- Lleva las unidades en todos los pasos.
+- Si una unidad esta elevada a una potencia, el factor de conversion tambien debe elevarse.

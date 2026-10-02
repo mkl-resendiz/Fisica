@@ -2,12 +2,13 @@
 
 ## Resumen
 
-Resolver un problema de fisica no consiste solamente en sustituir numeros en una ecuacion. El libro propone **modelar la situacion** y construir representaciones que permitan verla desde diferentes perspectivas.
+El libro plantea que un problema fisico debe convertirse en un modelo manejable. La situacion real puede ser demasiado compleja, por lo que se eliminan detalles que no afectan la pregunta.
 
-Entre los modelos mencionados se encuentran:
+Los modelos incluyen:
 
 - modelo geometrico;
-- simplificacion;
+- modelos de simplificacion;
+- modelos de analisis;
 - modelos estructurales.
 
 Las representaciones pueden ser:
@@ -19,153 +20,201 @@ Las representaciones pueden ser:
 - tabular;
 - matematica.
 
-El objetivo es pasar de una situacion descrita con palabras a una representacion que permita identificar variables, relaciones y ecuaciones utiles.
+La representacion matematica es el paso que permite convertir la situacion fisica en ecuaciones que pueden resolverse.
 
 ## Conceptos clave
 
-- **Modelo:** representacion simplificada de una situacion fisica.
-- **Modelo geometrico:** convierte la situacion en una construccion geometrica.
-- **Representacion mental:** visualizar lo que sucede.
-- **Representacion pictorica:** dibujar la situacion.
-- **Pictorica simplificada:** eliminar detalles que no son importantes para el problema.
-- **Grafica:** relacionar variables mediante ejes.
-- **Tabular:** organizar datos en una tabla.
-- **Matematica:** representar la situacion mediante ecuaciones.
+- Modelo geometrico.
+- Modelo de particula.
+- Simplificacion.
+- Representacion mental.
+- Representacion pictorica.
+- Representacion grafica.
+- Representacion matematica.
 
 ## Formulas importantes
 
-En esta seccion no existe una ecuacion universal nueva. El punto central es seleccionar el modelo adecuado.
+### Tangente
 
-En problemas geometricos, pueden aparecer relaciones como:
+Para un triangulo rectangulo:
 
 $$
-\\tan\\theta=\\frac{\\text{cateto opuesto}}
-{\\text{cateto adyacente}}
+\tan\theta=\frac{\text{cateto opuesto}}{\text{cateto adyacente}}
+$$
+
+Si el cateto opuesto es $h$ y el adyacente es $d$:
+
+$$
+\tan\theta=\frac{h}{d}
+$$
+
+Despejando:
+
+$$
+d\tan\theta=h
+$$
+
+Por tanto:
+
+$$
+\boxed{h=d\tan\theta}
 $$
 
 ## Ejemplo del libro
 
 ### Problema
 
-Encontrar la altura de un arbol que no puede medirse directamente. La distancia horizontal al arbol es $50.0\\,m$ y la linea de vision hacia la parte superior forma $25.0^\\circ$ con el suelo.
+Un observador esta a $50.0\,m$ de un arbol y observa la parte superior con un angulo de $25.0^\circ$.
 
 ### Datos
 
 $$
-d=50.0\\,m
+d=50.0\,m
 $$
 
 $$
-\\theta=25.0^\\circ
+\theta=25.0^\circ
 $$
 
 ### Que se busca
 
-La altura $h$ del arbol.
+$$
+h=?
+$$
 
 ### Principio fisico
 
-El problema real se transforma en un triangulo rectangulo. La altura es el cateto opuesto y la distancia al arbol es el cateto adyacente.
+Se representa la situacion mediante un triangulo rectangulo.
 
 ### Desarrollo paso a paso
 
-Usamos:
-
 $$
-\\tan\\theta=\\frac{h}{d}
+\tan\theta=\frac{h}{d}
 $$
 
-Despejamos:
+Multiplicamos por $d$:
 
 $$
-h=d\\tan\\theta
+d\tan\theta=h
+$$
+
+Reordenamos:
+
+$$
+h=d\tan\theta
 $$
 
 Sustituimos:
 
 $$
-h=(50.0\\,m)\\tan(25.0^\\circ)
+h=(50.0\,m)\tan(25.0^\circ)
 $$
 
 $$
-\\boxed{h\\approx23.3\\,m}
+h=(50.0)(0.4663)\,m
+$$
+
+$$
+\boxed{h=23.3\,m}
 $$
 
 ### Resultado
 
 $$
-\\boxed{h=23.3\\,m}
+\boxed{h=23.3\,m}
 $$
 
 ### Interpretacion fisica
 
-La medicion directa de la altura no fue necesaria. Bastaron una distancia accesible y un angulo para construir un modelo geometrico equivalente.
+El modelo geometrico permite obtener una magnitud dificil de medir directamente.
 
 ## Ejercicios del final
 
-La seccion 1.2 contiene dos problemas de fin de seccion. Se resuelven ambos.
+### Ejercicio 6 — Ancho de un rio
 
-### Ejercicio 6
-
-Una topografa camina $100\\,m$ por la ribera de un rio y observa un arbol situado directamente enfrente. El angulo entre la linea de base y la visual al arbol es $35.0^\\circ$. Encontrar el ancho del rio.
-
-**Principio fisico**
-
-El modelo es un triangulo rectangulo.
+Datos:
 
 $$
-\\tan\\theta=\\frac{w}{d}
+d=100\,m
+$$
+
+$$
+\theta=35.0^\circ
+$$
+
+Modelo:
+
+$$
+\tan\theta=\frac{w}{d}
 $$
 
 Despejamos:
 
 $$
-w=d\\tan\\theta
+w=d\tan\theta
 $$
 
 Sustituimos:
 
 $$
-w=(100\\,m)\\tan(35.0^\\circ)
+w=(100\,m)\tan(35.0^\circ)
 $$
 
 $$
-\\boxed{w\\approx70.0\\,m}
-$$
-
-**Interpretacion:** el ancho del rio se obtiene indirectamente a partir de una distancia que si puede medirse y un angulo.
-
-### Ejercicio 7
-
-Un cristal tiene atomos ubicados en una red cubica de lado $L=0.200\\,nm$ y se fractura a lo largo de un plano diagonal. Se pide el espaciamiento entre planos atomicos adyacentes.
-
-**Modelo**
-
-La geometria del cubo permite representar la separacion entre los planos mediante la diagonal correspondiente. Para la configuracion mostrada en la figura del libro:
-
-$$
-d=\\frac{L}{\\sqrt{2}}
-$$
-
-Sustituyendo:
-
-$$
-d=\\frac{0.200\\,nm}{\\sqrt{2}}
+w=(100)(0.7002)\,m
 $$
 
 $$
-\\boxed{d\\approx0.141\\,nm}
+\boxed{w\approx70.0\,m}
 $$
 
-**Interpretacion:** el problema muestra como una estructura tridimensional puede convertirse en una construccion geometrica mas sencilla para obtener una distancia microscopica.
+### Ejercicio 7 — Separacion entre planos atomicos
+
+El lado del cubo es:
+
+$$
+L=0.200\,nm
+$$
+
+Para la geometria mostrada en el problema, la diagonal de una cara es:
+
+$$
+d_{cara}=\sqrt{L^2+L^2}
+$$
+
+Factorizamos $L^2$:
+
+$$
+d_{cara}=\sqrt{2L^2}
+$$
+
+$$
+d_{cara}=L\sqrt2
+$$
+
+La separacion perpendicular correspondiente es:
+
+$$
+d=\frac{L}{\sqrt2}
+$$
+
+Sustituimos:
+
+$$
+d=\frac{0.200\,nm}{\sqrt2}
+$$
+
+$$
+\boxed{d\approx0.141\,nm}
+$$
 
 ## Dato curioso
 
-Una representacion grafica no es simplemente un dibujo de la situacion. El libro destaca que sus ejes pueden representar variables abstractas, como posicion y tiempo, y no necesariamente dimensiones espaciales que uno observaria directamente.
+El modelo de particula permite representar objetos extensos como puntos cuando su tamaño y procesos internos no afectan el movimiento que se estudia.
 
 ## Ideas para recordar
 
-- Antes de calcular, representa la situacion.
-- Elimina detalles que no afecten el resultado.
-- Un mismo problema puede tener varias representaciones utiles.
-- La representacion matematica normalmente aparece despues de comprender la situacion.
+- Primero entiende la situacion; despues busca la ecuacion.
+- Un dibujo puede revelar la geometria oculta del problema.
+- Simplificar no significa ignorar fisica importante.
+- La representacion matematica debe corresponder al modelo elegido.

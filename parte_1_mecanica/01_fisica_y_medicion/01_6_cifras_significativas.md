@@ -2,68 +2,78 @@
 
 ## Resumen
 
-Las mediciones experimentales tienen incertidumbre. Las **cifras significativas** comunican cuanta precision esta contenida en una medicion.
+Las mediciones experimentales tienen incertidumbre. Las cifras significativas indican la precision que realmente esta contenida en una medicion.
 
-El libro utiliza como ejemplo una medicion de radio de $6.0\\,cm$ con incertidumbre de $\\pm0.1\\,cm$. El ultimo digito comunicado forma parte de la precision de la medicion.
+Para multiplicacion y division, el resultado conserva el numero de cifras significativas de la cantidad con menos cifras significativas.
 
-Los ceros pueden ser significativos o no. Para evitar ambiguedades, la notacion cientifica es especialmente util.
+Para suma y resta, el resultado conserva el menor numero de lugares decimales.
 
-Reglas principales:
-
-- en multiplicacion y division, el resultado conserva el numero de cifras significativas de la cantidad con menos cifras significativas;
-- en suma y resta, el resultado conserva el menor numero de lugares decimales;
-- no conviene redondear en pasos intermedios;
-- el redondeo se realiza al final.
+El libro tambien recomienda conservar todos los digitos durante los calculos intermedios y redondear solamente al final.
 
 ## Conceptos clave
 
-- Incertidumbre experimental.
+- Incertidumbre.
 - Cifras significativas.
-- Lugar decimal.
+- Lugares decimales.
 - Notacion cientifica.
 - Redondeo.
-- Precision de una medicion.
-- Error de redondeo.
+- Precision.
 
 ## Formulas importantes
+
+### Area de un rectangulo
+
+$$
+A=LW
+$$
 
 ### Area de un circulo
 
 $$
-A=\\pi r^2
+A=\pi r^2
 $$
 
-### Regla para multiplicacion y division
+Para multiplicar:
 
-El resultado debe conservar tantas cifras significativas como la cantidad con menos cifras significativas.
+$$
+\text{cifras significativas del resultado}
+=
+\text{menor numero de cifras significativas de los datos}
+$$
 
-### Regla para suma y resta
+Para sumar o restar:
 
-El resultado debe conservar tantos lugares decimales como el termino con menos lugares decimales.
+$$
+\text{lugares decimales del resultado}
+=
+\text{menor numero de lugares decimales de los datos}
+$$
 
 ## Ejemplo del libro
 
 ### Problema
 
-Una habitacion mide $12.71\\,m$ de largo y $3.46\\,m$ de ancho. Encontrar el area de la alfombra.
-
-### Datos
+Una habitacion mide:
 
 $$
-L=12.71\\,m
+L=12.71\,m
 $$
 
 $$
-W=3.46\\,m
+W=3.46\,m
 $$
+
+Encontrar el area.
 
 ### Que se busca
 
-El area.
+$$
+A=?
+$$
 
 ### Principio fisico
 
-Para un rectangulo:
+El area de un rectangulo es:
 
 $$
 A=LW
@@ -71,140 +81,165 @@ $$
 
 ### Desarrollo paso a paso
 
-Calculadora:
+Sustituimos:
 
 $$
-A=(12.71)(3.46)=43.9766\\,m^2
+A=(12.71\,m)(3.46\,m)
 $$
 
-Ahora contamos cifras significativas:
+Primero calculamos sin redondear:
+
+$$
+A=43.9766\,m^2
+$$
+
+Contamos cifras significativas:
 
 - $12.71$ tiene 4;
 - $3.46$ tiene 3.
 
-La respuesta debe tener 3 cifras significativas:
+Por tanto, el resultado debe tener 3 cifras significativas.
 
 $$
-43.9766\\rightarrow44.0
+43.9766\rightarrow44.0
 $$
 
 ### Resultado
 
 $$
-\\boxed{A=44.0\\,m^2}
+\boxed{A=44.0\,m^2}
 $$
 
 ### Interpretacion fisica
 
-Los digitos adicionales que aparecen en la calculadora no representan precision real adicional. La respuesta debe reflejar la precision de las mediciones de entrada.
+Los digitos que muestra una calculadora no representan automaticamente precision experimental.
 
 ## Ejercicios del final
 
 ### Ejercicio 20
 
-Determinar las cifras significativas de:
-
-**a) $78.9\\pm0.2$**
-
-La medicion esta expresada hasta las decimas:
+**a)**
 
 $$
-\\boxed{3\\ cifras\\ significativas}
+78.9\pm0.2
 $$
 
-**b) $3.788\\times10^9$**
+Tiene:
 
 $$
-\\boxed{4\\ cifras\\ significativas}
+\boxed{3\ cifras\ significativas}
 $$
 
-**c) $2.46\\times10^{-6}$**
+**b)**
 
 $$
-\\boxed{3\\ cifras\\ significativas}
+3.788\times10^9
 $$
 
-**d) $0.0053$**
-
-Los ceros iniciales solo colocan el punto decimal:
+Tiene:
 
 $$
-\\boxed{2\\ cifras\\ significativas}
+\boxed{4\ cifras\ significativas}
 $$
 
-### Ejercicio 21
-
-Un ano tropical contiene $365.242199$ dias. Encontrar el numero de segundos.
-
-Primero:
+**c)**
 
 $$
-1\\,dia=24\\,h
+2.46\times10^{-6}
 $$
 
-$$
-1\\,h=3600\\,s
-$$
-
-Por tanto:
+Tiene:
 
 $$
-t=(365.242199)(24)(3600)
+\boxed{3\ cifras\ significativas}
 $$
 
-$$
-t=31\\,556\\,925.9936\\,s
-$$
-
-La precision del dato inicial permite reportar aproximadamente:
+**d)**
 
 $$
-\\boxed{3.15569\\times10^7\\,s}
+0.0053
 $$
 
-### Ejercicio 29
-
-El problema analiza el redondeo cuando se requieren tres cifras significativas, incluyendo el caso en que el siguiente digito es exactamente 5.
-
-Ejemplos del libro:
+Los ceros iniciales no cuentan:
 
 $$
-6.379\\,m\\rightarrow6.38\\,m
+\boxed{2\ cifras\ significativas}
 $$
 
-porque el siguiente digito es mayor que 5.
+### Ejercicio 21 — Año tropical
+
+Datos:
+
+$$
+365.242199\,dias
+$$
+
+Convertimos dias a horas:
+
+$$
+365.242199\,dias
+\left(\frac{24\,h}{1\,dia}\right)
+$$
+
+Se cancela dia:
+
+$$
+=365.242199(24)\,h
+$$
+
+Convertimos horas a segundos:
+
+$$
+365.242199(24)
+\left(\frac{3600\,s}{1\,h}\right)
+$$
+
+Se cancela hora:
+
+$$
+=31\,556\,925.9936\,s
+$$
+
+En notacion cientifica:
+
+$$
+=3.15569259936\times10^7\,s
+$$
+
+### Resultado
+
+$$
+\boxed{t\approx3.15569\times10^7\,s}
+$$
+
+### Ejercicio 29 — Redondeo de tres cifras
+
+El libro presenta:
+
+$$
+6.379\,m\rightarrow6.38\,m
+$$
+
+porque el cuarto digito es $9$.
 
 Tambien:
 
 $$
-6.374\\,m\\rightarrow6.37\\,m
+6.374\,m\rightarrow6.37\,m
 $$
 
-porque el siguiente digito es menor que 5.
+porque el cuarto digito es $4$.
 
-Para:
-
-$$
-6.375\\,m
-$$
-
-el libro presenta la regla de redondear el ultimo digito retenido hacia el numero par mas cercano para evitar una acumulacion sistematica de errores.
-
-Con tres cifras significativas:
-
-$$
-\\boxed{6.375\\,m\\rightarrow6.38\\,m}
-$$
+Para un numero terminado en 5, el ejercicio introduce el problema del redondeo y compara las alternativas. La idea importante es que una regla de redondeo debe aplicarse consistentemente.
 
 ## Dato curioso
 
-La cantidad de cifras significativas de una respuesta no depende solamente de la calculadora. Una calculadora puede mostrar muchos digitos, pero esos digitos adicionales pueden no estar respaldados por la precision de las mediciones originales.
+Una medicion de $6.0\,cm$ comunica mas informacion que $6\,cm$: el cero final indica que la medicion fue expresada hasta la decima de centimetro.
 
 ## Ideas para recordar
 
-- Las cifras significativas comunican precision.
-- Los ceros iniciales no son significativos.
-- Los ceros finales pueden ser significativos y conviene usar notacion cientifica para evitar ambiguedad.
-- Multiplicacion/division: manda el menor numero de cifras significativas.
-- Suma/resta: manda el menor numero de lugares decimales.
-- Conserva todos los digitos durante el calculo y redondea al final.
+- La calculadora no decide cuanta precision tiene una medicion.
+- Multiplicacion/division: usa cifras significativas.
+- Suma/resta: usa lugares decimales.
+- Conserva los digitos intermedios.
+- Redondea al final.

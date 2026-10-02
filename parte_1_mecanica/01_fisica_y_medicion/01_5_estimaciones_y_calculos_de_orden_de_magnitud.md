@@ -2,55 +2,72 @@
 
 ## Resumen
 
-Muchas preguntas de fisica no necesitan una respuesta exacta. El objetivo puede ser determinar aproximadamente el tamaño de una cantidad.
+Una estimacion busca una respuesta razonable sin necesidad de conocer todos los datos con precision. El orden de magnitud expresa la escala aproximada mediante una potencia de diez.
 
-El **orden de magnitud** se expresa como una potencia de diez. Para obtenerlo:
+El libro propone:
 
 1. escribir el numero en notacion cientifica;
-2. identificar el multiplicador entre 1 y 10;
-3. compararlo con $\\sqrt{10}\\approx3.162$;
-4. si el multiplicador es menor que 3.162, conservar la potencia de diez;
-5. si es mayor, aumentar en uno la potencia.
+2. comparar el multiplicador con $3.162=\sqrt{10}$;
+3. elegir la potencia de diez mas cercana.
 
-Las estimaciones requieren supuestos razonables. El libro destaca que un buen estimador debe reconocer escalas fisicas y aceptar que el resultado puede ser correcto dentro de un factor aproximado de diez.
+Las estimaciones suelen ser confiables dentro de un factor aproximado de diez.
 
 ## Conceptos clave
 
 - Estimacion.
 - Orden de magnitud.
 - Notacion cientifica.
-- Suposicion razonable.
-- Modelo simplificado.
+- Supuestos razonables.
 - Calculo de servilleta.
-- Factor de diez.
 
 ## Formulas importantes
 
 Si:
 
 $$
-N=a\\times10^n
+N=a\times10^n
 $$
 
-con $1\\le a<10$:
+con:
 
-- si $a<\\sqrt{10}$, el orden es $10^n$;
-- si $a>\\sqrt{10}$, el orden es $10^{n+1}$.
+$$
+1\le a<10
+$$
+
+entonces:
+
+- si $a<3.162$, el orden es $10^n$;
+- si $a>3.162$, el orden es $10^{n+1}$.
 
 ## Ejemplo del libro
 
 ### Problema
 
-Estimar el numero de respiraciones realizadas por una persona durante una vida promedio.
+Estimar el numero de respiraciones realizadas durante una vida humana promedio.
 
-### Datos
+### Datos aproximados
 
-El libro utiliza aproximadamente:
+$$
+70\,anos
+$$
 
-- vida: $70\\,anos$;
-- respiraciones: $10\\,respiraciones/min$;
-- un ano: aproximadamente $400\\,dias$;
-- un dia: aproximadamente $25\\,h$.
+$$
+10\,respiraciones/min
+$$
+
+Para simplificar:
+
+$$
+1\,ano\approx400\,dias
+$$
+
+$$
+1\,dia\approx25\,h
+$$
+
+$$
+1\,h=60\,min
+$$
 
 ### Que se busca
 
@@ -58,172 +75,240 @@ El orden de magnitud del numero total de respiraciones.
 
 ### Principio fisico
 
-Construir una cadena de estimaciones sencillas y multiplicarlas.
+Construir la estimacion por factores.
 
 ### Desarrollo paso a paso
 
-Minutos por ano:
+Minutos por año:
 
 $$
-(400\\,d/ano)(25\\,h/d)(60\\,min/h)
-\\approx6\\times10^5\\,min/ano
+1\,ano
+\left(\frac{400\,dias}{1\,ano}\right)
+\left(\frac{25\,h}{1\,dia}\right)
+\left(\frac{60\,min}{1\,h}\right)
 $$
 
-Minutos en 70 anos:
+Se cancelan las unidades:
 
 $$
-(70\\,anos)(6\\times10^5\\,min/ano)
-\\approx4\\times10^7\\,min
+=400(25)(60)\,min
+$$
+
+$$
+=600000\,min
+$$
+
+$$
+\approx6\times10^5\,min/ano
+$$
+
+Minutos durante 70 años:
+
+$$
+(70\,anos)
+\left(6\times10^5\,\frac{min}{ano}\right)
+$$
+
+$$
+=4.2\times10^7\,min
 $$
 
 Respiraciones:
 
 $$
-(10\\,resp/min)(4\\times10^7\\,min)
-\\approx4\\times10^8\\,resp
+(10\,resp/min)(4.2\times10^7\,min)
 $$
 
-El orden de magnitud es:
+$$
+=4.2\times10^8\,resp
+$$
+
+Como orden de magnitud:
 
 $$
-\\boxed{10^9\\ respiraciones}
+4.2\times10^8
+$$
+
+esta mas cerca de $10^9$ que de $10^8$ porque:
+
+$$
+4.2>3.162
+$$
+
+Por tanto:
+
+$$
+\boxed{N\sim10^9\,respiraciones}
 $$
 
 ### Resultado
 
-Una persona realiza del orden de mil millones de respiraciones durante una vida.
+Una persona realiza del orden de mil millones de respiraciones durante su vida.
 
 ### Interpretacion fisica
 
-La precision de cada supuesto individual no es importante mientras el objetivo sea determinar la escala general.
+No interesa conocer el numero exacto. Interesa identificar correctamente la escala.
 
 ## Ejercicios del final
 
-### Ejercicio 17
+### Ejercicio 17 — Masa de una bañera
 
-Estimar el orden de magnitud de la masa de una bañera medio llena de agua y de una bañera medio llena de monedas.
+**a) Agua**
 
-**Parte a: agua**
-
-Supongamos:
+Estimamos:
 
 $$
-V\\sim0.3\\,m^3
+V\sim0.3\,m^3
 $$
 
-y una densidad aproximada del agua:
+y:
 
 $$
-\\rho\\sim10^3\\,kg/m^3
+\rho_{agua}\sim10^3\,kg/m^3
 $$
 
-Entonces:
+Usamos:
 
 $$
-m\\sim\\rho V
+m=\rho V
 $$
 
-$$
-m\\sim(10^3)(0.3)
-\\sim3\\times10^2\\,kg
-$$
-
-Por tanto:
+Sustituimos:
 
 $$
-\\boxed{m\\sim10^2\\,kg}
+m\sim(10^3\,kg/m^3)(0.3\,m^3)
 $$
 
-**Parte b: monedas**
-
-Para monedas apiladas de manera irregular, una estimacion razonable de densidad efectiva puede ser del orden de $10^3\\,kg/m^3$ y un volumen de unos $0.3\\,m^3$:
+Se cancela $m^3$:
 
 $$
-m\\sim10^3(0.3)
-\\sim3\\times10^2\\,kg
-$$
-
-De nuevo:
-
-$$
-\\boxed{m\\sim10^2\\,kg}
-$$
-
-La cifra exacta depende mucho de la geometria y del espacio vacio entre monedas; por eso el objetivo es solamente el orden de magnitud.
-
-### Ejercicio 18
-
-Estimar cuántos afinadores de piano pueden residir en la ciudad de Nueva York.
-
-**Una estimacion posible:**
-
-Supongamos:
-
-- poblacion: $10^7$ personas;
-- aproximadamente $2.5$ personas por hogar;
-- un piano por cada $10^2$ hogares;
-- cada piano requiere aproximadamente una afinacion anual;
-- un afinador realiza unas $5\\times10^2$ afinaciones por ano.
-
-Numero de hogares:
-
-$$
-\\frac{10^7}{2.5}\\sim4\\times10^6
-$$
-
-Pianos:
-
-$$
-\\frac{4\\times10^6}{10^2}
-\\sim4\\times10^4
-$$
-
-Afinadores necesarios:
-
-$$
-\\frac{4\\times10^4}{5\\times10^2}
-\\sim8\\times10^1
+m\sim3\times10^2\,kg
 $$
 
 Por tanto:
 
 $$
-\\boxed{N\\sim10^2\\ afinadores}
+\boxed{m\sim10^2\,kg}
 $$
 
-**Nota:** es una estimacion tipo Fermi; el resultado depende de los supuestos elegidos.
+**b) Monedas**
 
-### Ejercicio 19
-
-El problema pide demostrar, mediante un calculo de orden de magnitud, que la concentracion de asteroides grandes en el cinturon de asteroides es pequena.
-
-El planteamiento general es:
-
-1. estimar el volumen de la region;
-2. usar el numero estimado de asteroides grandes, $\\sim10^9$;
-3. calcular una densidad espacial aproximada;
-4. comparar el espacio promedio disponible con el tamaño de un asteroide.
-
-Con:
+El problema es de estimacion. Podemos aproximar una densidad efectiva del orden de $10^3\,kg/m^3$ y un volumen similar:
 
 $$
-1\\,UA=1.496\\times10^{11}\\,m
+m\sim(10^3)(0.3)\,kg
 $$
 
-la region se extiende aproximadamente entre $2.06$ y $3.27\\,UA$.
+$$
+m\sim3\times10^2\,kg
+$$
 
-El punto fisico importante es que incluso con $10^9$ objetos, la region orbital tiene una escala enorme comparada con el tamaño de asteroides de radio $\\sim100\\,m$.
+$$
+\boxed{m\sim10^2\,kg}
+$$
 
-**Conclusión de orden de magnitud:** la separacion media entre objetos es enorme frente a su tamaño, por lo que la probabilidad geometrica de que una nave encuentre un asteroide grande en su vecindad inmediata es muy pequena.
+El valor depende de cuanto espacio vacio quede entre monedas.
+
+### Ejercicio 18 — Afinadores de piano
+
+Supongamos:
+
+$$
+N_{personas}\sim10^7
+$$
+
+y:
+
+$$
+2.5\,personas/hogar
+$$
+
+Hogares:
+
+$$
+N_{hogares}
+=
+\frac{10^7\,personas}
+{2.5\,personas/hogar}
+$$
+
+$$
+N_{hogares}\sim4\times10^6
+$$
+
+Si aproximadamente uno de cada $10^2$ hogares tiene piano:
+
+$$
+N_{pianos}
+\sim
+\frac{4\times10^6}{10^2}
+$$
+
+$$
+N_{pianos}\sim4\times10^4
+$$
+
+Si un afinador realiza del orden de $5\times10^2$ afinaciones por año:
+
+$$
+N_{afinadores}
+\sim
+\frac{4\times10^4}
+{5\times10^2}
+$$
+
+$$
+N_{afinadores}\sim8\times10^1
+$$
+
+Por orden de magnitud:
+
+$$
+\boxed{N\sim10^2}
+$$
+
+### Ejercicio 19 — Cinturon de asteroides
+
+El problema proporciona:
+
+$$
+N\sim10^9
+$$
+
+asteroides de radio de aproximadamente:
+
+$$
+r\sim100\,m
+$$
+
+y una region entre:
+
+$$
+2.06\,UA
+\quad\text{y}\quad
+3.27\,UA
+$$
+
+con:
+
+$$
+1\,UA=1.496\times10^{11}\,m
+$$
+
+El planteamiento consiste en estimar el volumen de la region y compararlo con el volumen ocupado por los asteroides.
+
+La idea central es que, aunque $10^9$ parece un numero enorme, el espacio disponible en una region astronomica es mucho mayor que el volumen combinado de los asteroides.
+
+**Conclusion de orden de magnitud:** la concentracion espacial de asteroides grandes es muy baja.
 
 ## Dato curioso
 
-Los calculos de orden de magnitud tambien se conocen como "calculos de servilleta" porque pueden hacerse rapidamente con unas pocas aproximaciones razonables y muy poca aritmetica.
+Los problemas de estimacion se conocen informalmente como "calculos de servilleta": pueden resolverse con pocos supuestos y operaciones sencillas.
 
 ## Ideas para recordar
 
-- No toda pregunta requiere una respuesta exacta.
-- Primero identifica las escalas importantes.
+- Estimar no significa adivinar.
 - Declara tus supuestos.
+- Usa numeros sencillos pero razonables.
 - Trabaja con potencias de diez.
-- Una estimacion debe ser fisicamente razonable, aunque no sea exacta.
+- No necesitas precision de calculadora para conocer una escala.

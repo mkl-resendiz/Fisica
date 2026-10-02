@@ -2,39 +2,22 @@
 
 ## Resumen
 
-El analisis dimensional permite comprobar si una ecuacion puede ser fisicamente correcta. La idea central es que ambos lados de una ecuacion deben tener las mismas dimensiones.
+El analisis dimensional trata las dimensiones como cantidades algebraicas. Una ecuacion fisica debe ser homogenea: los dos lados deben tener las mismas dimensiones.
 
-El libro usa:
-
-- $L$ para longitud;
-- $M$ para masa;
-- $T$ para tiempo.
-
-Las dimensiones no son lo mismo que las unidades. Por ejemplo, metros y pies son unidades diferentes, pero ambas representan la dimension longitud.
-
-El analisis dimensional tambien permite deducir la forma de una relacion entre cantidades, aunque no determina por si solo constantes numericas adimensionales.
-
-## Conceptos clave
-
-- Dimension.
-- Unidad.
-- Homogeneidad dimensional.
-- Cantidad fundamental.
-- Cantidad derivada.
-- Constante adimensional.
-- Verificacion dimensional.
-- Ley de potencias.
-
-## Formulas importantes
-
-Algunas dimensiones utiles:
+En el libro:
 
 $$
-[v]=\\frac{L}{T}
+[L]=L,\qquad[M]=M,\qquad[T]=T
+$$
+
+Algunas dimensiones utiles son:
+
+$$
+[v]=\frac{L}{T}
 $$
 
 $$
-[a]=\\frac{L}{T^2}
+[a]=\frac{L}{T^2}
 $$
 
 $$
@@ -45,13 +28,53 @@ $$
 [V]=L^3
 $$
 
-Para comprobar una ecuacion, las dimensiones del lado izquierdo deben coincidir con las del lado derecho.
+El analisis dimensional puede comprobar ecuaciones y determinar exponentes en relaciones de proporcionalidad, pero no determina constantes numericas adimensionales.
+
+## Conceptos clave
+
+- Dimension.
+- Unidad.
+- Homogeneidad dimensional.
+- Exponente dimensional.
+- Constante adimensional.
+- Ley de potencias.
+
+## Formulas importantes
+
+### Rapidez
+
+$$
+[v]=\frac{L}{T}
+$$
+
+### Aceleracion
+
+$$
+[a]=\frac{L}{T^2}
+$$
+
+### Posicion con aceleracion
+
+La expresion:
+
+$$
+x\propto at^2
+$$
+
+es dimensionalmente posible porque:
+
+$$
+[a t^2]
+=
+\frac{L}{T^2}T^2
+=L
+$$
 
 ## Ejemplo del libro
 
 ### Problema
 
-Comprobar que:
+Demostrar que:
 
 $$
 v=at
@@ -61,19 +84,13 @@ es dimensionalmente correcta.
 
 ### Datos
 
-Rapidez:
-
 $$
-[v]=\\frac{L}{T}
+[v]=\frac{L}{T}
 $$
 
-Aceleracion:
-
 $$
-[a]=\\frac{L}{T^2}
+[a]=\frac{L}{T^2}
 $$
-
-Tiempo:
 
 $$
 [t]=T
@@ -81,7 +98,7 @@ $$
 
 ### Que se busca
 
-Comprobar la consistencia dimensional.
+Comprobar que ambos lados tienen la misma dimension.
 
 ### Principio fisico
 
@@ -89,33 +106,45 @@ Una ecuacion fisica debe ser dimensionalmente homogenea.
 
 ### Desarrollo paso a paso
 
-En el lado derecho:
+Lado izquierdo:
 
 $$
-[at]=\\frac{L}{T^2}(T)
+[v]=\frac{L}{T}
+$$
+
+Lado derecho:
+
+$$
+[at]=[a][t]
+$$
+
+Sustituimos:
+
+$$
+[at]=\left(\frac{L}{T^2}\right)(T)
+$$
+
+Cancelamos un factor $T$:
+
+$$
+[at]=\frac{L}{T}
 $$
 
 Por tanto:
 
 $$
-[at]=\\frac{L}{T}
-$$
-
-Esto coincide con:
-
-$$
-[v]=\\frac{L}{T}
+[v]=[at]
 $$
 
 ### Resultado
 
 $$
-\\boxed{v=at\\text{ es dimensionalmente correcta}}
+\boxed{v=at\text{ es dimensionalmente correcta}}
 $$
 
 ### Interpretacion fisica
 
-La comprobacion no demuestra que la ecuacion describa completamente el fenomeno, pero si elimina ecuaciones que no pueden ser correctas.
+La prueba dimensional indica que la ecuacion tiene una forma compatible con las dimensiones, pero no demuestra por si sola que sea la ley fisica completa.
 
 ## Ejercicios del final
 
@@ -127,49 +156,64 @@ $$
 x=ka^m t^n
 $$
 
-donde $k$ es adimensional. Encontrar $m$ y $n$ mediante analisis dimensional.
+donde $k$ es adimensional.
 
-Como $x$ tiene dimension $L$:
-
-$$
-L=[a]^m[t]^n
-$$
+Como:
 
 $$
-L=\\left(\\frac{L}{T^2}\\right)^mT^n
+[x]=L
 $$
 
+y:
+
 $$
-L=L^mT^{n-2m}
+[a]=\frac{L}{T^2}
 $$
 
-Igualando exponentes:
+entonces:
+
+$$
+L=
+\left(\frac{L}{T^2}\right)^mT^n
+$$
+
+Aplicamos las potencias:
+
+$$
+L=L^mT^{-2m+n}
+$$
+
+Para que ambos lados sean iguales:
 
 $$
 m=1
 $$
 
+y:
+
 $$
-n-2m=0
+-2m+n=0
 $$
 
-Entonces:
+Sustituimos $m=1$:
+
+$$
+-2(1)+n=0
+$$
 
 $$
 n=2
 $$
 
-**Resultado:**
+Por tanto:
 
 $$
-\\boxed{x\\propto at^2}
+\boxed{x=kat^2}
 $$
 
-El analisis dimensional no determina el valor de $k$.
+El analisis dimensional no permite obtener el valor numerico de $k$.
 
 ### Ejercicio 9
-
-Determinar cuales de las ecuaciones propuestas son dimensionalmente correctas.
 
 **a)**
 
@@ -177,99 +221,128 @@ $$
 v_f=v_i+ax
 $$
 
-Los dos primeros terminos tienen dimension:
+Dimensiones de los primeros terminos:
 
 $$
-\\frac{L}{T}
+[v_f]=[v_i]=\frac{L}{T}
 $$
 
-pero:
+Pero:
 
 $$
-[ax]=\\frac{L}{T^2}L=\\frac{L^2}{T^2}
+[ax]=
+\left(\frac{L}{T^2}\right)(L)
+=
+\frac{L^2}{T^2}
 $$
 
-No coinciden.
+Como:
 
 $$
-\\boxed{\\text{a) Incorrecta}}
+\frac{L}{T}\neq\frac{L^2}{T^2}
+$$
+
+la ecuacion es dimensionalmente incorrecta.
+
+$$
+\boxed{\text{a) Incorrecta}}
 $$
 
 **b)**
 
 $$
-y=(2\\,m)\\cos(kx)
+y=(2\,m)\cos(kx)
 $$
 
-Para que el coseno sea valido, $kx$ debe ser adimensional. Como $k$ tiene unidades de $m^{-1}$ y $x$ de $m$:
+Para que el argumento del coseno sea valido:
 
 $$
 [kx]=1
 $$
 
-Ademas, $(2\\,m)$ tiene dimension $L$, igual que $y$.
+El problema da:
 
 $$
-\\boxed{\\text{b) Correcta}}
+[k]=m^{-1}
+$$
+
+y:
+
+$$
+[x]=m
+$$
+
+Por tanto:
+
+$$
+[kx]=(m^{-1})(m)=1
+$$
+
+Ademas, $2\,m$ tiene dimension de longitud, igual que $y$.
+
+$$
+\boxed{\text{b) Correcta}}
 $$
 
 ### Ejercicio 10
 
-Para:
+Dada:
 
 $$
 x=At^3+Bt
 $$
 
-determinar las dimensiones de $A$, $B$ y de $dx/dt$.
+Cada termino debe tener dimension de longitud.
 
-Cada termino debe tener dimension $L$.
+Para el primer termino:
 
-Para $At^3$:
+$$
+[At^3]=L
+$$
 
 $$
 [A]T^3=L
 $$
 
+Despejamos:
+
 $$
-\\boxed{[A]=\\frac{L}{T^3}}
+\boxed{[A]=\frac{L}{T^3}}
 $$
 
-Para $Bt$:
+Para el segundo:
+
+$$
+[Bt]=L
+$$
 
 $$
 [B]T=L
 $$
 
 $$
-\\boxed{[B]=\\frac{L}{T}}
+\boxed{[B]=\frac{L}{T}}
 $$
 
 Ahora:
 
 $$
-\\frac{dx}{dt}=3At^2+B
+\frac{dx}{dt}=3At^2+B
 $$
 
-Cada termino tiene:
+Como $dx/dt$ es rapidez:
 
 $$
-\\frac{L}{T}
-$$
-
-Por tanto:
-
-$$
-\\boxed{\\left[\\frac{dx}{dt}\\right]=\\frac{L}{T}}
+\boxed{\left[\frac{dx}{dt}\right]=\frac{L}{T}}
 $$
 
 ## Dato curioso
 
-El analisis dimensional puede descubrir la forma de una relacion sin conocer todos los detalles del fenomeno. Sin embargo, no puede determinar constantes numericas adimensionales como el $k$ de una expresion proporcional.
+El analisis dimensional puede predecir la forma de una relacion, pero no necesariamente sus constantes numericas. En el ejemplo de movimiento circular, la constante adimensional solo puede determinarse con fisica adicional.
 
 ## Ideas para recordar
 
-- Dimension no es lo mismo que unidad.
-- Los dos lados de una ecuacion deben tener las mismas dimensiones.
-- Los argumentos de funciones como seno, coseno y exponencial deben ser adimensionales.
-- El analisis dimensional comprueba y restringe ecuaciones, pero no siempre determina constantes numericas.
+- Dimension y unidad no son lo mismo.
+- No se pueden sumar cantidades con dimensiones diferentes.
+- Los argumentos de seno, coseno y funciones similares deben ser adimensionales.
+- El analisis dimensional es una prueba de consistencia, no una demostracion completa de una ley.
