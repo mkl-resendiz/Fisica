@@ -26,11 +26,19 @@ Objeto moviéndose a la derecha con rapidez constante.
 
 Si la derecha es $+x$:
 
+<div align="center">
+
 $v_x>0$
+
+</div>
 
 y como la rapidez no cambia:
 
+<div align="center">
+
 $a_x=0$
+
+</div>
 
 El diagrama debe mostrar puntos igualmente separados hacia la derecha y vectores de velocidad iguales.
 
@@ -38,11 +46,19 @@ El diagrama debe mostrar puntos igualmente separados hacia la derecha y vectores
 
 Objeto moviéndose a la derecha y disminuyendo su rapidez de manera constante.
 
+<div align="center">
+
 $v_x>0$
+
+</div>
 
 pero la rapidez disminuye, por lo que:
 
+<div align="center">
+
 $a_x<0$
+
+</div>
 
 El diagrama debe mostrar puntos cada vez más cercanos mientras el objeto avanza hacia la derecha.
 
@@ -50,11 +66,19 @@ El diagrama debe mostrar puntos cada vez más cercanos mientras el objeto avanza
 
 Objeto moviéndose a la izquierda y aumentando su rapidez.
 
+<div align="center">
+
 $v_x<0$
+
+</div>
 
 Como aumenta su rapidez en la misma dirección del movimiento:
 
+<div align="center">
+
 $a_x<0$
+
+</div>
 
 El diagrama debe mostrar posiciones cada vez más separadas hacia la izquierda.
 

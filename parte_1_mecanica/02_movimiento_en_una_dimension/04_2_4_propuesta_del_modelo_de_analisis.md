@@ -21,9 +21,17 @@ El corredor se representa como una partícula que recorre una línea recta.
 
 Datos:
 
+<div align="center">
+
 $\Delta x=20\,\mathrm{m}$
 
+</div>
+
+<div align="center">
+
 $\Delta t=4.0\,\mathrm{s}$
+
+</div>
 
 y la rapidez es constante.
 
@@ -33,21 +41,41 @@ La condición “rapidez constante” permite utilizar el modelo de partícula b
 
 ### 3. Analizar
 
+<div align="center">
+
 $v_x=\frac{\Delta x}{\Delta t}$
+
+</div>
+
+<div align="center">
 
 $v_x=\frac{20\,\mathrm{m}}{4.0\,\mathrm{s}} =5.0\,\mathrm{m/s}$
 
+</div>
+
 Para $t=10\,\mathrm{s}$:
+
+<div align="center">
 
 $x_f=x_i+v_xt$
 
+</div>
+
+<div align="center">
+
 $x_f=0+(5.0\,\mathrm{m/s})(10\,\mathrm{s}) =50\,\mathrm{m}$
+
+</div>
 
 ### 4. Finalizar
 
 Las unidades son correctas:
 
+<div align="center">
+
 $\frac{\mathrm{m}}{\mathrm{s}}=\mathrm{m/s}$
+
+</div>
 
 y la posición de $50\,\mathrm{m}$ es coherente con mantener $5.0\,\mathrm{m/s}$ durante $10\,\mathrm{s}$.
 
@@ -63,7 +91,11 @@ Un automóvil recorre una carretera recta con rapidez constante.
 
 **Analizar:**
 
+<div align="center">
+
 $x_f=x_i+v_xt$
+
+</div>
 
 **Finalizar:** verificar que $v_x t$ tenga unidades de longitud.
 
@@ -71,7 +103,11 @@ $x_f=x_i+v_xt$
 
 Si la velocidad cambia con el tiempo, no debe utilizarse directamente:
 
+<div align="center">
+
 $x_f=x_i+v_xt$
+
+</div>
 
 con un único valor de $v_x$, porque esa ecuación pertenece al modelo de velocidad constante.
 
@@ -85,25 +121,45 @@ El procedimiento es:
 
 **Automóvil:**
 
+<div align="center">
+
 $x_{\mathrm{auto}}=45.0\,\mathrm{m}+(45.0\,\mathrm{m/s})t$
+
+</div>
 
 **Patrullero:**
 
+<div align="center">
+
 $x_{\mathrm{policía}}= \frac12(3.00\,\mathrm{m/s^2})t^2$
+
+</div>
 
 El alcance ocurre cuando:
 
+<div align="center">
+
 $x_{\mathrm{auto}}=x_{\mathrm{policía}}$
+
+</div>
 
 Por tanto:
 
+<div align="center">
+
 $45.0+45.0t=1.50t^2$
+
+</div>
 
 La intersección positiva de ambas curvas corresponde al instante de alcance.
 
 El ejemplo del libro obtiene:
 
+<div align="center">
+
 $\boxed{t\approx31.0\,\mathrm{s}}$
+
+</div>
 
 **Interpretación:** el método gráfico y el algebraico representan la misma condición física: ambos vehículos ocupan la misma posición en el mismo instante.
 
